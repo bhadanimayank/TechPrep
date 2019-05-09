@@ -17,7 +17,7 @@ public class HourglassSum {
 	
 	public static int hourglassSum(int[][] matrix) {
 		
-		int sum=0;
+		int sum=Integer.MIN_VALUE;
 		for(int row=0; row<4; row++) {
 			for(int column=0; column<4; column++) {
 				int internalSum = matrix[row][column]+matrix[row][column+1]+matrix[row][column+2]
